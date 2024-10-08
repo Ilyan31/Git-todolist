@@ -18,3 +18,12 @@
     "lib": ["ESNext"]
   }
 }
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
