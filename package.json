@@ -7,11 +7,13 @@
     "dev": "vite"
   },
   "dependencies": {
-    "vue": "^3.4.29",
+    "@vue/runtime-core": "^3.5.11",
+    "vue": "^3.5.11",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.5",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
