@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["vite/client"],
+    "allowJs": true,   // Permet l'utilisation des fichiers JS si nécessaire
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
@@ -16,6 +17,7 @@
   "include": [
     "vite.config.*",
     "src/**/*.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/**/*.js"   // Inclure les fichiers JS si vous en utilisez
   ]
 }
