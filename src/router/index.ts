@@ -12,7 +12,7 @@ const routes = [
     path: '/todolist',
     name: 'TodoList',
     component: TodoList,
-    meta: { requiresAuth: true },  // Protège l'accès à cette route
+    meta: { requiresAuth: true },  // Protéger l'accès à cette route
   },
 ];
 
@@ -21,7 +21,6 @@ const router = createRouter({
   routes,
 });
 
-// Vérifie si l'utilisateur est authentifié avant d'accéder à la route protégée
 router.beforeEach((to, from, next) => {
   const token = localStorage.getItem('token');
   if (to.matched.some(record => record.meta.requiresAuth) && !token) {
